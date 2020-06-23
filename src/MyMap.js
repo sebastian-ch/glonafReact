@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { useState, Component } from 'react'
 import ReactMapboxGl, { GeoJSONLayer } from 'react-mapbox-gl';
 import * as topojson from 'topojson-client';
-import geojsonTest from './data/geojsons/glonaf_tax.json'
-
-
+import Sidebar from './Sidebar'
+import bbox from '@turf/bbox'
+import geojsonTest from './data/geojsons/glonaf_tax_join_topo.json'
 const { token, styles } = require('./data/config.json')
 
 const Map = ReactMapboxGl({
@@ -11,29 +11,37 @@ const Map = ReactMapboxGl({
 })
 
 export default class MyMap extends Component {
-
     constructor(props) {
 
         super(props)
 
         this.state = {
             county: 'Tax Count',
+            tdwg4_name: 'TDWG4 Name',
             center: {
-                lng: -71.77,
-                lat: 43.71
+                lng: -71.627, //7.91
+                lat: 43.77 //50.85
             },
             mapStyle: styles.light,
             geojsonData: this.getGeojson(),
-            zoom: [6]
+            zoom: [6],
+            map: null,
+            regionData: null,
+
+
         }
 
         this.onClickFill = this.onClickFill.bind(this);
         this.onEnter = this.onEnter.bind(this)
         this.onExit = this.onExit.bind(this)
         this.handleButton = this.handleButton.bind(this)
-
     }
 
+    loadStyle(map) {
+        this.setState({
+            map: map
+        })
+    }
 
     getGeojson() {
 
@@ -49,9 +57,10 @@ export default class MyMap extends Component {
     }
 
     fillStyle() {
+
          return {
              'fill-color': {
-                         
+ 
                  property: 'taxCount',
                  stops: [
                      [146, "#edf8fb"],
@@ -59,13 +68,13 @@ export default class MyMap extends Component {
                      [774, "#66c2a4"],
                      [1233, "#2ca25f"]
                  ]
-         },
+             },
              'fill-opacity': 0.8,
-             'fill-outline-color': 'red'
-         } 
+             'fill-outline-color': 'black'
+         }
 
        /* return {
-            'fill-color': 'blue',
+            'fill-color': 'black',
             'fill-opacity': 0.8,
             'fill-outline-color': 'red'
 
@@ -73,12 +82,30 @@ export default class MyMap extends Component {
     }
 
 
+
     onClickFill(evt) {
 
+        //source: geojson-1
 
-        console.log(evt.features[0].geometry)
+        var clickObjId = evt.features[0].properties.taxCount;
+        //console.log(clickObjId);
+        console.log(evt.features[0])
+        for (var x in this.state.regionData) {
+            if (this.state.regionData[x].OBJIDsic == clickObjId) {
+                //console.log(this.state.regionData[x])
+                break;
+            }
+        }
 
-        
+        var bounds = bbox(evt.features[0].geometry)
+
+        this.state.map.fitBounds(bounds, {
+            linear: true,
+            padding: 20,
+            speed: 0.8
+        });
+
+
     }
 
 
@@ -87,7 +114,8 @@ export default class MyMap extends Component {
         e.target.getCanvas().style.cursor = 'pointer'
 
         this.setState({
-            county: 'Tax Count: ' + e.features[0].properties.taxCount
+            county: 'Tax Count: ' + e.features[0].properties.taxCount,
+            tdwg4_name: 'TDWG4 Name: ' + e.features[0].properties.tdwg4_name
         })
     }
 
@@ -96,22 +124,26 @@ export default class MyMap extends Component {
         e.target.getCanvas().style.cursor = 'grab'
 
         this.setState({
-            county: 'Tax Count'
+            county: 'Tax Count',
+            tdwg4_name: 'TDWG4 Name'
         })
 
     }
 
-    handleButton() {
+    handleButton(e) {
 
-        console.log(this.state.mapStyle)
-        if( this.state.mapStyle === styles.light) {
-            this.setState({
-                mapStyle: styles.dark
-            })
+
+
+        const geojLayer = this.state.map.getStyle().layers[74];
+
+        console.log(this.state.map.getLayoutProperty('geojson-1-fill', 'visibility'))
+
+        if (this.state.map.getLayoutProperty('geojson-1-fill', 'visibility') === 'visible') {
+
+            this.state.map.setLayoutProperty('geojson-1-fill', 'visibility', 'none');
+
         } else {
-            this.setState({
-                mapStyle: styles.light
-            })
+            this.state.map.setLayoutProperty('geojson-1-fill', 'visibility', 'visible');
         }
 
 
@@ -119,26 +151,47 @@ export default class MyMap extends Component {
 
     render() {
 
+        //Region();
 
         return (
             <div>
-                <div className="Sidebar">
-                    <button onClick={this.handleButton}>Change Style</button>
-                    <h1>{this.state.county}</h1>
-                </div>
+
+                <Sidebar
+                    county={this.state.county}
+                    tdwg4_name={this.state.tdwg4_name}
+                    buttonClick={this.handleButton}>
+                       
+                </Sidebar>
+
                 <div className='Map'>
+
                     <Map
                         style={this.state.mapStyle}
                         zoom={this.state.zoom}
                         center={this.state.center}
+                        maxZoom={19}
+                        minZoom={3}
+                        maxBounds={[
+                            [-190, -90],
+                            [190, 90]
+                        ]}
+                        dragRotate={false}
+                        pitchWithRotate={false}
+                        onStyleLoad={el => this.loadStyle(el)}
                         containerStyle={{
-                            height: "100%",
-                            width: '100%'
+                            height: "100vh",
+                            width: '100vw'
                         }}
+
                     >
+
 
                         <GeoJSONLayer
                             data={this.state.geojsonData}
+                            fillLayout={{
+                                'visibility': 'visible'
+                                
+                            }}
                             fillPaint={this.fillStyle()}
                             before='waterway-label'
                             fillOnClick={this.onClickFill}

@@ -5,15 +5,11 @@ body {
   
 }
 
-.Sidebar {
-  width: 25%;
-  text-align: center;
+button {
+  margin-top: 4px;
 }
-
 .Map {
-  left: 25%;
-  position: absolute;
-  width: 75%;
   top: 0;
   bottom: 0;
+  
 }
