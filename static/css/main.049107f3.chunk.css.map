@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,SAAU,CACV,eAEF,CAEA,OACE,cACF,CACA,KACE,KAAM,CACN,QAEF","file":"main.049107f3.chunk.css","sourcesContent":["body {\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n  \n}\n\nbutton {\n  margin-top: 4px;\n}\n.Map {\n  top: 0;\n  bottom: 0;\n  \n}\n"]}
