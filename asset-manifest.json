@@ -1,25 +1,27 @@
 {
   "files": {
     "main.css": "/glonafReact/static/css/main.049107f3.chunk.css",
-    "main.js": "/glonafReact/static/js/main.03d434c4.chunk.js",
-    "main.js.map": "/glonafReact/static/js/main.03d434c4.chunk.js.map",
+    "main.js": "/glonafReact/static/js/main.61c91552.chunk.js",
+    "main.js.map": "/glonafReact/static/js/main.61c91552.chunk.js.map",
     "runtime-main.js": "/glonafReact/static/js/runtime-main.a86c9360.js",
     "runtime-main.js.map": "/glonafReact/static/js/runtime-main.a86c9360.js.map",
-    "static/css/2.b4a16772.chunk.css": "/glonafReact/static/css/2.b4a16772.chunk.css",
-    "static/js/2.11094f94.chunk.js": "/glonafReact/static/js/2.11094f94.chunk.js",
-    "static/js/2.11094f94.chunk.js.map": "/glonafReact/static/js/2.11094f94.chunk.js.map",
+    "static/css/2.d4221709.chunk.css": "/glonafReact/static/css/2.d4221709.chunk.css",
+    "static/js/2.860efcc1.chunk.js": "/glonafReact/static/js/2.860efcc1.chunk.js",
+    "static/js/2.860efcc1.chunk.js.map": "/glonafReact/static/js/2.860efcc1.chunk.js.map",
     "index.html": "/glonafReact/index.html",
-    "precache-manifest.30be73a5042e15de8c0ff3fc8c76dc29.js": "/glonafReact/precache-manifest.30be73a5042e15de8c0ff3fc8c76dc29.js",
+    "precache-manifest.5de95aada9a52cd5c27d827cc2b65b4d.js": "/glonafReact/precache-manifest.5de95aada9a52cd5c27d827cc2b65b4d.js",
     "service-worker.js": "/glonafReact/service-worker.js",
-    "static/css/2.b4a16772.chunk.css.map": "/glonafReact/static/css/2.b4a16772.chunk.css.map",
+    "static/css/2.d4221709.chunk.css.map": "/glonafReact/static/css/2.d4221709.chunk.css.map",
     "static/css/main.049107f3.chunk.css.map": "/glonafReact/static/css/main.049107f3.chunk.css.map",
-    "static/js/2.11094f94.chunk.js.LICENSE.txt": "/glonafReact/static/js/2.11094f94.chunk.js.LICENSE.txt"
+    "static/js/2.860efcc1.chunk.js.LICENSE.txt": "/glonafReact/static/js/2.860efcc1.chunk.js.LICENSE.txt",
+    "static/media/islands.geojson": "/glonafReact/static/media/islands.fa0af21b.geojson",
+    "static/media/tax-list1.txt": "/glonafReact/static/media/tax-list1.0b70a996.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a86c9360.js",
-    "static/css/2.b4a16772.chunk.css",
-    "static/js/2.11094f94.chunk.js",
+    "static/css/2.d4221709.chunk.css",
+    "static/js/2.860efcc1.chunk.js",
     "static/css/main.049107f3.chunk.css",
-    "static/js/main.03d434c4.chunk.js"
+    "static/js/main.61c91552.chunk.js"
   ]
 }
