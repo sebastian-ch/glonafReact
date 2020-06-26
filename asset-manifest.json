@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/glonafReact/static/css/main.049107f3.chunk.css",
-    "main.js": "/glonafReact/static/js/main.61c91552.chunk.js",
-    "main.js.map": "/glonafReact/static/js/main.61c91552.chunk.js.map",
+    "main.js": "/glonafReact/static/js/main.776e8a7b.chunk.js",
+    "main.js.map": "/glonafReact/static/js/main.776e8a7b.chunk.js.map",
     "runtime-main.js": "/glonafReact/static/js/runtime-main.a86c9360.js",
     "runtime-main.js.map": "/glonafReact/static/js/runtime-main.a86c9360.js.map",
     "static/css/2.d4221709.chunk.css": "/glonafReact/static/css/2.d4221709.chunk.css",
     "static/js/2.860efcc1.chunk.js": "/glonafReact/static/js/2.860efcc1.chunk.js",
     "static/js/2.860efcc1.chunk.js.map": "/glonafReact/static/js/2.860efcc1.chunk.js.map",
     "index.html": "/glonafReact/index.html",
-    "precache-manifest.5de95aada9a52cd5c27d827cc2b65b4d.js": "/glonafReact/precache-manifest.5de95aada9a52cd5c27d827cc2b65b4d.js",
+    "precache-manifest.d69549de7177e3647d864514ac3ee3d0.js": "/glonafReact/precache-manifest.d69549de7177e3647d864514ac3ee3d0.js",
     "service-worker.js": "/glonafReact/service-worker.js",
     "static/css/2.d4221709.chunk.css.map": "/glonafReact/static/css/2.d4221709.chunk.css.map",
     "static/css/main.049107f3.chunk.css.map": "/glonafReact/static/css/main.049107f3.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.d4221709.chunk.css",
     "static/js/2.860efcc1.chunk.js",
     "static/css/main.049107f3.chunk.css",
-    "static/js/main.61c91552.chunk.js"
+    "static/js/main.776e8a7b.chunk.js"
   ]
 }
