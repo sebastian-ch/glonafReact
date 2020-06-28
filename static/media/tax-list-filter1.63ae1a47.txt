@@ -1,0 +1,73 @@
+taxon_orig	tpl_input	TPL_Plant_Name_Index	standardized_name	author	hybrid	family_tpl	name_status	list_id	region_id	status
+Atriplex heterosperma Bunge	Atriplex heterosperma Bunge	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	5	5	naturalized
+Atriplex heterosperma Bunge	Atriplex heterosperma Bunge	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	15	15	naturalized
+Atriplex heterosperma Bunge	Atriplex heterosperma Bunge	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	17	17	naturalized
+Atriplex heterosperma Bunge	Atriplex heterosperma Bunge	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	20	20	naturalized
+Atriplex heterosperma Bunge	Atriplex heterosperma Bunge	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	25	25	naturalized
+Zoysia tenuifolia Willd. ex Trin.	Zoysia tenuifolia Willd. ex Trin.	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	29	29	naturalized
+Zoysia tenuifolia Willd. ex Trin.	Zoysia tenuifolia Willd. ex Trin.	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	30	30	naturalized
+Zoysia tenuifolia Willd. ex Trin.	Zoysia tenuifolia Willd. ex Trin.	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	33	33	naturalized
+Zoysia tenuifolia Willd. ex Trin.	Zoysia tenuifolia Willd. ex Trin.	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	34	34	naturalized
+Uncinia sinclairii Boott	Uncinia sinclairii Boott	1	Uncinia sinclairii	Boott ex Hook.f.	0	Cyperaceae	accepted	1756	66	naturalized
+Phleum arenarium	Phleum arenarium	1	Phleum arenarium	L.	0	Poaceae	accepted	121	121	naturalized
+Phleum arenarium L.	Phleum arenarium L.	1	Phleum arenarium	L.	0	Poaceae	accepted	1780	129	naturalized
+Phleum arenarium	Phleum arenarium	1	Phleum arenarium	L.	0	Poaceae	accepted	132	132	naturalized
+Phleum arenarium L.	Phleum arenarium L.	1	Phleum arenarium	L.	0	Poaceae	accepted	1783	132	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	139	139	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	871	145	alien
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	873	183	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	874	184	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1017	184	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	876	186	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	881	192	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	883	194	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	884	196	naturalized
+Zoysia tenuifolia Trin.	Zoysia tenuifolia Trin.	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	1332	287	alien
+Zoysia tenuifolia Thiele	Zoysia tenuifolia Thiele	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	313	313	alien
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1409	328	naturalized
+Phleum arenarium	Phleum arenarium	1	Phleum arenarium	L.	0	Poaceae	accepted	339	339	naturalized
+Abies procera	Abies procera	1	Abies procera	Rehder	0	Pinaceae	accepted	345	345	naturalized
+Abies procera	Abies procera	1	Abies procera	Rehder	0	Pinaceae	accepted	346	346	naturalized
+Abies procera	Abies procera	1	Abies procera	Rehder	0	Pinaceae	accepted	347	347	naturalized
+Abies procera	Abies procera	1	Abies procera	Rehder	0	Pinaceae	accepted	348	348	naturalized
+Abies procera	Abies procera	1	Abies procera	Rehder	0	Pinaceae	accepted	369	369	naturalized
+Abies procera	Abies procera	1	Abies procera	Rehder	0	Pinaceae	accepted	677	677	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	734	734	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	892	740	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	893	741	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	900	765	naturalized
+Phleum arenarium	Phleum arenarium	1	Phleum arenarium	L.	0	Poaceae	accepted	906	772	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	910	776	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	911	777	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	913	779	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	915	781	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	916	782	naturalized
+Phleum arenarium	Phleum arenarium	1	Phleum arenarium	L.	0	Poaceae	accepted	918	785	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	919	786	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	920	787	naturalized
+Phleum arenarium	Phleum arenarium	1	Phleum arenarium	L.	0	Poaceae	accepted	921	788	naturalized
+Phleum arenarium	Phleum arenarium	1	Phleum arenarium	L.	0	Poaceae	accepted	924	791	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	924	791	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	928	795	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	931	798	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	934	802	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	937	805	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1119	911	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1114	912	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1118	913	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1116	914	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1113	915	naturalized
+Atriplex micrantha	Atriplex micrantha	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1115	916	naturalized
+Zoysia tenuifolia Thiele	Zoysia tenuifolia Thiele	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	1614	1150	alien
+Zoysia tenuifolia Thiele	Zoysia tenuifolia Thiele	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	1624	1154	alien
+Zoysia tenuifolia Thiele	Zoysia tenuifolia Thiele	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	1618	1155	alien
+Zoysia tenuifolia Thiele	Zoysia tenuifolia Thiele	1	Zoysia tenuifolia	Thiele	0	Poaceae	accepted	1623	1159	alien
+Atriplex micrantha Ledeb.	Atriplex micrantha Ledeb.	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1655	1285	naturalized
+Atriplex micrantha Ledeb.	Atriplex micrantha Ledeb.	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1658	1288	naturalized
+Atriplex micrantha Ledeb.	Atriplex micrantha Ledeb.	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1663	1293	naturalized
+Atriplex micrantha Ledeb.	Atriplex micrantha Ledeb.	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1664	1294	naturalized
+Atriplex micrantha Ledeb.	Atriplex micrantha Ledeb.	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1665	1295	naturalized
+Atriplex micrantha Ledeb.	Atriplex micrantha Ledeb.	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1666	1296	naturalized
+Atriplex micrantha Ledeb.	Atriplex micrantha Ledeb.	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1667	1297	naturalized
+Atriplex micrantha Ledeb.	Atriplex micrantha Ledeb.	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1668	1298	naturalized
+Atriplex micrantha Ledeb.	Atriplex micrantha Ledeb.	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	1670	1300	naturalized
