@@ -19,10 +19,12 @@
     "react-kiwi-dropdown": "^1.0.13",
     "react-mapbox-gl": "^4.8.6",
     "react-scripts": "3.4.1",
+    "source-map-explorer": "^2.4.2",
     "styled-components": "^5.1.1",
     "topojson-client": "^3.1.0"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",

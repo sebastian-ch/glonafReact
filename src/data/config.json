@@ -3,6 +3,21 @@
     "styles": {
         "light": "mapbox://styles/mapbox/light-v10",
         "dark" : "mapbox://styles/mapbox/dark-v10",
-        "myStyle": "mapbox://styles/sebastian-ch/ckbs5e0fa6wuf1ipghqwn37la"
+        "myStyle": "mapbox://styles/sebastian-ch/ckbs5e0fa6wuf1ipghqwn37la",
+        "mySimpleStyle": "mapbox://styles/sebastian-ch/ckbut2clp0swr1io9k9ck80z9"
+    },
+
+    "centers": {
+        "Africa": [23.037, 3.289],
+        "Antarctic": [-21.160, -62.864],
+        "Asia-Temperate": [100.942, 47.114],
+        "Asia-Tropical": [102.711, 1.619],
+        "Australasia": [154.809, -34.135],
+        "Europe": [14.638, 49.062],
+        "mixed": [35.299, 38.992],
+        "Northern America": [-103.529, 49.034],
+        "Southern America": [-62.993, -13.114],
+        "Pacific": [176.699, 8.71]
     }
+    
 }

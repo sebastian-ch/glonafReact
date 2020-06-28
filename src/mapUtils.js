@@ -6,8 +6,16 @@ export const fillColorScheme = () => {
             [146, "#edf8fb"],
             [409, "#b2e2e2"],
             [774, "#66c2a4"],
-            [1233, "#2ca25f"]
+            [1233, "#2ca25f"],
+            [3301, "#006d2c"]
+
         ]
+      /*  stops: [
+            [146, "#edf8fb"],
+            [409, "#b2e2e2"],
+            [774, "#66c2a4"],
+            [1233, "#2ca25f"]
+        ] */
     }
 
 }
@@ -35,7 +43,8 @@ export const bigFill = () => {
 export const smallFill = () => {
     return {
         'fill-color': fillColorScheme(),
-        'fill-outline-color': 'black'
+        'fill-outline-color': 'black',
+        'fill-opacity': 0.8,
 
     }
 }
