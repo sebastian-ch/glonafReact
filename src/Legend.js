@@ -12,11 +12,11 @@ class Legend extends Component {
             return(
                 <div className='legend'>
                 <h3>Inventory Completeness</h3>
-                <span style={{background: '#fc8d59'}}></span>
+                <span style={{background: '#eeb479'}}></span>
                 <label>Likely very incomplete</label>
-                <span style={{background: '#ffffbf'}}></span>
+                <span style={{background: '#e9e29c'}}></span>
                 <label>Likely incomplete</label>
-                <span style={{background: '#99d594'}}></span>
+                <span style={{background: '#9ccb86'}}></span>
                 <label>Likely nearly complete</label>
                 
             </div>

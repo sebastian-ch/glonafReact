@@ -71,7 +71,6 @@ class Sidebar extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
-                <br></br>
                 <h1 style={{marginBottom: '0'}}>{this.props.tdwg4_name}</h1>
                 <h1 style={{marginTop: '0'}}>{this.props.county}</h1>
                 
@@ -81,13 +80,7 @@ class Sidebar extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
                 
-              
                 <ToggleButtons onClick={this.props.buttonClick}>Remove GloNAF Layer</ToggleButtons>
                 <br></br>
                 <ToggleButtons onClick={this.props.addPopDen}>Add Population Density Layer</ToggleButtons>

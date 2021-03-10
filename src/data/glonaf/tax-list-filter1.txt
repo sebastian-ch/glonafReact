@@ -1,4 +1,5 @@
 taxon_orig	tpl_input	TPL_Plant_Name_Index	standardized_name	author	hybrid	family_tpl	name_status	list_id	region_id	status
+all			all							all
 Atriplex heterosperma Bunge	Atriplex heterosperma Bunge	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	5	5	naturalized
 Atriplex heterosperma Bunge	Atriplex heterosperma Bunge	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	15	15	naturalized
 Atriplex heterosperma Bunge	Atriplex heterosperma Bunge	1	Atriplex micrantha	Ledeb.	0	Amaranthaceae	accepted	17	17	naturalized

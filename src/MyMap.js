@@ -121,13 +121,13 @@ export default class MyMap extends Component {
               }
           } */
 
-        /* var bounds = bbox(evt.features[0].geometry)
- 
-         this.state.map.fitBounds(bounds, {
-             linear: true,
-             padding: 20,
-             speed: 0.8
-         }); */
+        var bounds = bbox(evt.features[0].geometry)
+
+        this.state.map.fitBounds(bounds, {
+            linear: true,
+            padding: 40,
+            speed: 0.8
+        });
 
     }
 
@@ -191,11 +191,11 @@ export default class MyMap extends Component {
 
         const colorScheme = [
             'match',
-                    ['get', 'completeness'],
-                    1, '#fc8d59',
-                    2, '#ffffbf',
-                    3, '#99d594',
-                    'purple'
+            ['get', 'completeness'],
+            1, '#eeb479',//'#fc8d59',
+            2, '#e9e29c', //'#ffffbf',
+            3, '#9ccb86',//'#99d594',
+            'purple'
         ]
 
         if (!this.state.inventoryView) {
@@ -205,7 +205,8 @@ export default class MyMap extends Component {
             })
             this.state.map.setPaintProperty('glonafAreas', 'fill-color', colorScheme)
             this.state.map.setPaintProperty('glonafAreasSmall', 'fill-color', colorScheme)
-            this.state.map.setPaintProperty('geojson-1-circle', 'circle-color', colorScheme)
+            //this.state.map.setPaintProperty('geojson-1-circle', 'circle-color', colorScheme)
+            this.state.map.setLayoutProperty('geojson-1-circle', 'visibility', 'none');
         } else {
 
             this.setState({
@@ -215,7 +216,8 @@ export default class MyMap extends Component {
             })
             this.state.map.setPaintProperty('glonafAreas', 'fill-color', fillColorScheme())
             this.state.map.setPaintProperty('glonafAreasSmall', 'fill-color', fillColorScheme())
-            this.state.map.setPaintProperty('geojson-1-circle', 'circle-color', fillColorScheme())
+            this.state.map.setLayoutProperty('geojson-1-circle', 'visibility', 'visible');
+            //this.state.map.setPaintProperty('geojson-1-circle', 'circle-color', fillColorScheme())
         }
 
     }
@@ -249,57 +251,76 @@ export default class MyMap extends Component {
         let selectedPlant = e.value
         var matching = []
         var alienOrNot = {}
-        _.find(this.state.taxList, function (o) {
-            if (o.standardized_name == selectedPlant) {
+        console.log(e);
 
-                matching.push(Number(o.region_id))
-                if (o.status == 'alien') {
-                    alienOrNot[o.region_id.toString()] = 'red'
-                } else {
-                    alienOrNot[o.region_id.toString()] = 'blue'
+        if (e.value === 'all') {
+
+            this.state.map.setFilter('glonafAreas', this.state.bigFilter);
+            this.state.map.setFilter('glonafAreasSmall', this.state.smallFilter);
+            this.state.map.setFilter('geojson-1-circle', null);
+
+            this.state.map.setPaintProperty(
+                'glonafAreas',
+                'fill-outline-color',
+                'black'
+            )
+
+        } else {
+
+
+
+
+            _.find(this.state.taxList, function (o) {
+                if (o.standardized_name == selectedPlant) {
+
+                    matching.push(Number(o.region_id))
+                    if (o.status == 'alien') {
+                        alienOrNot[o.region_id.toString()] = 'red'
+                    } else {
+                        alienOrNot[o.region_id.toString()] = 'blue'
+                    }
                 }
-            }
-        })
+            })
 
-        console.log(alienOrNot);
-        //console.log(this.state.map.getStyle().layers[13])
+            console.log(alienOrNot);
+            //console.log(this.state.map.getStyle().layers[13])
 
-        var filter1 = ["match",
-            ['get', "region_id"],
-            _.uniq(matching),
-            true,
-            false
-        ];
+            var filter1 = ["match",
+                ['get', "region_id"],
+                _.uniq(matching),
+                true,
+                false
+            ];
 
-        this.state.map.setFilter('glonafAreas', filter1);
-        this.state.map.setFilter('glonafAreasSmall', filter1);
-        this.state.map.setFilter('geojson-1-circle', filter1);
-
-
-        console.log(alienOrNot['791'])
+            this.state.map.setFilter('glonafAreas', filter1);
+            this.state.map.setFilter('glonafAreasSmall', filter1);
+            this.state.map.setFilter('geojson-1-circle', filter1);
 
 
-        this.state.map.setPaintProperty(
-            'glonafAreas',
-            'fill-outline-color',
-            'red'
-            /* ['get',
-                ['string', ['get', 'region_id']],
-                ['literal', alienOrNot]
-            ] */
+            console.log(alienOrNot['791'])
 
-        )
 
-        /*      this.state.map.setPaintProperty(
-                  'glonafAreasSmall',
-                  'fill-outline-color',
-              )
-              this.state.map.setPaintProperty(
-                  'geojson-1-circle',
-                  'circle-stroke-color',
-                  getColor()
-              ) */
+            this.state.map.setPaintProperty(
+                'glonafAreas',
+                'fill-outline-color',
+                'red'
+                /* ['get',
+                    ['string', ['get', 'region_id']],
+                    ['literal', alienOrNot]
+                ] */
 
+            )
+
+            /*      this.state.map.setPaintProperty(
+                      'glonafAreasSmall',
+                      'fill-outline-color',
+                  )
+                  this.state.map.setPaintProperty(
+                      'geojson-1-circle',
+                      'circle-stroke-color',
+                      getColor()
+                  ) */
+        }
     }
 
     render() {
@@ -379,7 +400,7 @@ export default class MyMap extends Component {
                         filter={this.state.smallFilter}
                         onMouseMove={this.onEnter}
                         onMouseLeave={this.onExit}
-                        onClick={this.onClickFill}
+                    //onClick={this.onClickFill}
 
                     />
 
@@ -392,7 +413,7 @@ export default class MyMap extends Component {
                         circleLayout={{
                             'visibility': 'visible'
                         }}
-                        circleOnClick={this.onClickFill}
+                        //circleOnClick={this.onClickFill}
                         circleOnMouseMove={this.onEnter}
                         circleOnMouseLeave={this.onExit}
                     />
